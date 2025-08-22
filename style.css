@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
-    font-family: system-ui;
+    font-family: "Public Sans", sans-serif;
     background-color: rgb(160, 76, 239);
-    background: linear-gradient(purple,rgb(173, 53, 220),rgb(221, 141, 28));
+    background: linear-gradient(rgb(54, 19, 159),rgb(118, 41, 181),rgb(239, 95, 237));
     color: aliceblue;
 
     min-height: 100vh;
