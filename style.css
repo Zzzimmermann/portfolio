@@ -2,8 +2,7 @@
 
 body{
     font-family: "Public Sans", sans-serif;
-    background-color: rgb(160, 76, 239);
-    background: linear-gradient(rgb(54, 19, 159),rgb(118, 41, 181),rgb(239, 95, 237));
+    background-color: rgb(39, 10, 65);
     color: aliceblue;
 
     min-height: 100vh;
@@ -15,6 +14,7 @@ body{
 
 h1{
     font-size:  12vw;
+    text-align: center;
 }
 h2{
     text-align: center;
