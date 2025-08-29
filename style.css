@@ -1,7 +1,17 @@
+/* - - - - - - - - - - - - - - */
+/* - - IMPORT - - - - - - - - */
+@import url(reset.css);
+@import url(utility.css);
+
+/* - - - - - - - - - - - - - - - -  */
+/* - - TYPOGRAPHIE - - - - - - - - */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{ font-family: "Public Sans", sans-serif }
+
+/* - - - - - - - - - - - - - - - -  */
+/* - - COLOR - - - - - - - - */
 body{
-    font-family: "Public Sans", sans-serif;
     background-color: rgb(39, 10, 65);
     color: aliceblue;
 
@@ -11,7 +21,19 @@ body{
     align-items: center;
     flex-direction: column;
 }
+a {
+    color: inherit
+}
 
+/* - - - - - - - - - - - - - - - -  */
+/* - - MISE EN PAGE - - - - - - - - */
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
 h1{
     font-size:  12vw;
     text-align: right;
@@ -21,4 +43,5 @@ h2{
     max-width: 25ch;
 }
 
-a{color:inherit}
+/* - - - - - - - - - - - - - - - -  */
+/* - - MODULES - - - - - - - - */
