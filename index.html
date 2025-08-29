@@ -7,6 +7,18 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.x/dist/scrollspy.min.js"></script>
+        <!-- <script src="/path/to/dist/scrollspy.min.js"></script> -->
+        <script>
+            window.onload = function () {
+                scrollSpy('#navMain', {
+                    sectionSelector: 'section',
+                    targetSelector: '.nav-link',
+                    offset: 100
+                });
+            }
+
+        </script>
         
 
         <header id="top">
@@ -27,10 +39,10 @@
 
         </header>
 
-        <nav>
-            <a href="#alpha">alpha</a>
-            <a href="#bravo">bravo</a>
-            <a href="#charlie">charlie</a>
+        <nav id="navMain">
+            <a href="#alpha" class="nav-link">alpha</a>
+            <a href="#bravo" class="nav-link">bravo</a>
+            <a href="#charlie" class="nav-link">charlie</a>
         </nav>
         <main>
             <section id="alpha">
@@ -52,6 +64,15 @@
                 <h1>bravo
                     <a href="#top" class="topNav">↑</a>
                 </h1>
+
+                <div class="gallery">
+
+                    <div>
+                        <a href="" data-lightbox="bravo">
+                            <img src="" alt="bleb">
+                        </a>
+                    </div><!-- </div> -->
+                 
             </section>
 
             <section id="charlie">
@@ -60,6 +81,9 @@
                 </h1>
             </section>
         </main>
+
+        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+        <script src="lightbox/js/lightbox-plus-jquery.js"></script>
 
     </body>
 </html>
