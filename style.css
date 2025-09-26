@@ -6,13 +6,18 @@
 /* - - - - - - - - - - - - - - - -  */
 /* - - TYPOGRAPHIE - - - - - - - - */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 
 html{ font-family: "Public Sans", sans-serif }
+
+h1 {
+    
+}
 
 /* - - - - - - - - - - - - - - - -  */
 /* - - COLOR - - - - - - - - */
 body{
-    background-color: rgb(39, 10, 65);
+    background-color: #694994;
     color: aliceblue;
 
     min-height: 100vh;
@@ -80,41 +85,32 @@ nav a:hover{
     background-color: rgba(122, 48, 207, 0.482);
 }
 
-/* .hero */
-
 .hero {
-    position: relative;
-
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
 }
-
-.hero .image,
-.hero .texte{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 1rem;
-}
-
 
 .hero .image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    flex-shrink: 0;
 }
 
+.hero .text {
+    flex: 1;
+    text-align: ;
+
+    font-size: 3vw;
+    font-family: "Plaster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #B4A5CB;
+}
 .hero .image img {
-    width: 100%;
-    heigth: 100%;
+    width: 100vw;
+    height: auto;
+    display: block;
     object-fit: cover;
-}
-
-.hero .texte {
-    background-color: #0004003c;
-    z-index: 2;
 }
